@@ -2,31 +2,39 @@
 .conteiner__body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .conteiner__header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.news {
+  white-space: nowrap;
+  max-width: 70%;
 }
 
 .widget__list {
   padding-left: 0;
   margin: 0;
   line-height: 2;
+  position: relative;
 }
 
 .widget__title {
-  text-align: center;
+  text-align: start;
 }
 
 .widget__title__item {
   color: rgb(99, 202, 243);
-  margin-right: 10px;
+  margin-right: 20px;
   text-decoration: none;
   font-size: 1.25em;
   font-weight: 600;
@@ -47,13 +55,19 @@
 }
 
 .item__news__icon {
-  width: 1em;
-  height: 1em;
+  width: 1.4em;
+  height: 1.4em;
   background-image: url('./vite.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 10px;
+  position: absolute;
+  left: -2em;
+}
+
+.item__news__content {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .exchange__rates {
@@ -70,10 +84,6 @@
   font-weight: 700;
   font-size: 1em;
   margin-right: 10px;
-}
-
-.exchange__rates:nth-child(n+1) {
-  margin-left: 26px;
 }
 
 .item__rates__lost {
@@ -103,4 +113,50 @@
 
 .advertising p{
   margin: 0;
+}
+
+.search__form {
+  display: flex;
+  margin-top: 7px;
+  margin-left: -135px;
+}
+
+.form__search__label {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.form__search__label:first-letter {
+  color: red;
+}
+
+.widget__search {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__search__input {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #fc0;
+}
+
+.form__search__btn {
+  padding: 5px 20px 5px 15px;
+  background-color: #fc0;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(90% 0, 100% 50%, 100% 50%, 90% 100%, 0 100%, 0 50%, 0 0);
+}
+
+.form__description {
+  font-weight: 700;
+}
+
+.form__example {
+  font-weight: 400;
+  color: grey;
 }

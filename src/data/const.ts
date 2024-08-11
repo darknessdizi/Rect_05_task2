@@ -17,3 +17,14 @@ export const rates = [
   {label: 'EUR MOEX', price: '70,86', increment: '+0,14'},
   {label: 'НЕФТЬ', price: '64,90', increment: '+1,63 %'},
 ]
+
+export const navigation = [
+  {text: 'Видео', link: '#'},
+  {text: 'Картинки', link: '#'},
+  {text: 'Новости', link: '#'},
+  {text: 'Карты', link: '#'},
+  {text: 'Маркет', link: '#'},
+  {text: 'Переводчик', link: '#'},
+  {text: 'Эфир', link: '#'},
+  {text: 'еще', link: '#'},
+]

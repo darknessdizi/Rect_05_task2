@@ -3,9 +3,9 @@ import { Banner } from './components/body/Banner/Banner';
 import { Title } from './components/header/Title/Title';
 import { WidgetAdvertising } from './components/header/WidgetAdvertising/WidgetAdvertising';
 import { WidgetContent } from './components/footer/WidgetContent/WidgetContent';
-import { WidgetNavigation } from './components/body/WidgetNavigation/WidgetNavigation';
+import { WidgetSearch } from './components/body/WidgetSearch/WidgetSearch';
 import { WidgetList } from './components/WidgetList/WidgetList';
-import { arrayHeaderNews, arrayNews, rates } from './data/const';
+import { arrayHeaderNews, arrayNews, navigation, rates } from './data/const';
 import { WidgetExchangeRates } from './components/header/WidgetExchangeRates/WidgetExchangeRates';
 
 function App() {
@@ -21,10 +21,13 @@ function App() {
           </WidgetList>
           <WidgetExchangeRates list={rates} />
         </div>
-        <WidgetAdvertising></WidgetAdvertising>
+        <WidgetAdvertising 
+          img="./adv.png"
+          text="Работа над ошибками"
+          info="Смотрите на Яндекс и запоминайте" />
       </header>
       <div className="conteiner__body">
-        <WidgetNavigation></WidgetNavigation>
+        <WidgetSearch menu={navigation}></WidgetSearch>
         <Banner></Banner>
         <WidgetContent></WidgetContent>
       </div>

@@ -1,11 +1,11 @@
-import React from 'react'
+export const WidgetAdvertising = (props) => {
+  const { img, text, info } = props;
 
-export const WidgetAdvertising = () => {
   return (
     <div className="advertising">
-      <img src="./adv.png" alt="" className="advertising__img" />
-      <h3>Работа над ошибками</h3>
-      <p>Смотрите на Яндекс и запоминайте</p>
+      <img src={img} alt="" className="advertising__img" />
+      <h3>{text}</h3>
+      <p>{info}</p>
     </div>
   )
 }
