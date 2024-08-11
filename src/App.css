@@ -1,0 +1,106 @@
+.conteiner,
+.conteiner__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.conteiner__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin-top: 50px;
+}
+
+.widget__list {
+  padding-left: 0;
+  margin: 0;
+  line-height: 2;
+}
+
+.widget__title {
+  text-align: center;
+}
+
+.widget__title__item {
+  color: rgb(99, 202, 243);
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.widget__title__item.active {
+  color: blue;
+}
+
+.news__date {
+  color: grey;
+}
+
+.item__news {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item__news__icon {
+  width: 1em;
+  height: 1em;
+  background-image: url('./vite.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.exchange__rates {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 2;
+}
+
+.item__rates {
+  font-weight: 700;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.exchange__rates:nth-child(n+1) {
+  margin-left: 26px;
+}
+
+.item__rates__lost {
+  color: grey;
+  margin-right: 10px;
+}
+
+.exchange__rates__link {
+  text-decoration: none;
+}
+
+.advertising {
+  margin-left: 50px;
+}
+
+.advertising__img {
+  object-fit: cover;
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.advertising h3 {
+  color: blue;
+  margin: 0;
+}
+
+.advertising p{
+  margin: 0;
+}
