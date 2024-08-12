@@ -26,7 +26,7 @@ export interface ICloudProps {
 
 export interface IItemListProps {
   text: string,
-  icon: string,
+  icon?: string,
   children?: React.ReactNode,
   weigth?: number,
   nextTxt?: string,
