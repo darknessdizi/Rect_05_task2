@@ -1,6 +1,7 @@
+import { IWidgetExchangeRatesProps } from "../../../modal/modal";
 import { ItemRates } from "../ItemRates/ItemRates";
 
-export const WidgetExchangeRates = (props) => {
+export const WidgetExchangeRates = (props: IWidgetExchangeRatesProps) => {
   const { list } = props;
 
   return (

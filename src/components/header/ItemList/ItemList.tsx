@@ -1,4 +1,6 @@
-export const ItemList = (props) => {
+import { IItemListProps } from "../../../modal/modal";
+
+export const ItemList = (props: IItemListProps) => {
   const { text, icon, children, weigth, nextTxt, color = 'black' } = props;
   const pathIcon = `url(${icon})`;
 

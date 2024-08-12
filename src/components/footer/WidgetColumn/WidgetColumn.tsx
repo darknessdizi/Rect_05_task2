@@ -1,4 +1,4 @@
-export const WidgetColumn = (props) => {
+export const WidgetColumn = (props: { children: React.ReactNode; }) => {
   const { children } = props;
 
   return (

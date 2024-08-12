@@ -1,6 +1,7 @@
+import { IWidgetSearchProps } from "../../../modal/modal";
 import { Title } from "../../header/Title/Title";
 
-export const WidgetSearch = (props) => {
+export const WidgetSearch = (props: IWidgetSearchProps) => {
   const { menu } = props;
 
   return (

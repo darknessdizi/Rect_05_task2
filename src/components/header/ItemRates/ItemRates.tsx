@@ -1,4 +1,6 @@
-export const ItemRates = (props) => {
+import { IItemRatesProps } from "../../../modal/modal";
+
+export const ItemRates = (props: IItemRatesProps) => {
   const { item } = props;
   return (
     <li>

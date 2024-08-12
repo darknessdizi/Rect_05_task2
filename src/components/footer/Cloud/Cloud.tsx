@@ -1,4 +1,6 @@
-export const Cloud = (props) => {
+import { ICloudProps } from "../../../modal/modal";
+
+export const Cloud = (props: ICloudProps) => {
   const { children, icon, degree, morning, day } = props;
 
   return (

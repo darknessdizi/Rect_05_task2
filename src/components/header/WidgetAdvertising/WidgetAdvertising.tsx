@@ -1,4 +1,6 @@
-export const WidgetAdvertising = (props) => {
+import { IWidgetAdvertisingProps } from "../../../modal/modal";
+
+export const WidgetAdvertising = (props: IWidgetAdvertisingProps) => {
   const { img, text, info } = props;
 
   return (

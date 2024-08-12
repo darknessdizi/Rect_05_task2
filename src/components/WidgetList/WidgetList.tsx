@@ -1,6 +1,7 @@
+import { IWidgetListProps } from '../../modal/modal';
 import { ItemList } from '../header/ItemList/ItemList';
 
-export const WidgetList = (props) => {
+export const WidgetList = (props: IWidgetListProps) => {
   const { list, children, weigth } = props;
   
   return (

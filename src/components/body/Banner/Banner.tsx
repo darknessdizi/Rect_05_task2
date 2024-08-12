@@ -1,4 +1,4 @@
-export const Banner = (props) => {
+export const Banner = (props: { url: string; alt: string; }) => {
   const { url, alt } = props;
 
   return (
