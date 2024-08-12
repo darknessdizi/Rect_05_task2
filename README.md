@@ -1,6 +1,10 @@
 Декомпозиция
 ===
 
+[![Build status](https://ci.appveyor.com/api/projects/status/cm1uk82w5n7i5u52?svg=true)](https://ci.appveyor.com/project/darknessdizi/rect-05-task2)
+
+*Ссылка на страницу:* https://darknessdizi.github.io/Rect_05_task2/
+
 Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
 
 Вам принесли дизайн-макет, похожий на этот:
