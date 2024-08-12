@@ -24,8 +24,9 @@
 .widget__list {
   padding-left: 0;
   margin: 0;
-  line-height: 2;
+  line-height: 1.5;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .widget__title {
@@ -55,14 +56,14 @@
 }
 
 .item__news__icon {
-  width: 1.4em;
-  height: 1.4em;
+  width: 1em;
+  height: 1em;
   background-image: url('./vite.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  left: -2em;
+  left: -1.5em;
 }
 
 .item__news__content {
@@ -159,4 +160,88 @@
 .form__example {
   font-weight: 400;
   color: grey;
+}
+
+.block__banner {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0px;
+}
+
+.banner__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: -75px -95px;
+}
+
+.widget__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer__column {
+  width: 30%;
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.widget__cloud {
+  margin-bottom: 10px;
+}
+
+.cloud__body {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cloud__img {
+  width: 40px;
+  height: 40px;
+}
+
+.cloud__body__degree {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.cloud__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.btn__media {
+  border: 1px solid rgb(99, 202, 243);
+  padding: 5px 5px 5px 40px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  background-color: rgb(99, 202, 243);
+ font-weight: 700;
+}
+
+.btn__media::before {
+  content: "";
+  position: absolute;
+  background-image: url('../public/play.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  left: 1px;
+  top: 1px;
+}
+
+.widget__title__item:hover {
+  color: lightgreen;
+}
+
+.form__search__btn:hover {
+  opacity: 0.8;
 }

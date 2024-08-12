@@ -6,7 +6,7 @@ export const WidgetSearch = (props) => {
   return (
     <div className="widget__search">
       <nav>
-        <Title title={menu} active={false}></Title>
+        <Title title={menu} active={true}></Title>
       </nav>
       <form action="#" className="search__form">
         <label htmlFor="search" className="form__search__label">Яндекс</label>

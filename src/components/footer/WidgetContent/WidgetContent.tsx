@@ -1,7 +1,8 @@
-import React from 'react'
-
-export const WidgetContent = () => {
+export const WidgetContent = (props) => {
+  const { children } = props;
   return (
-    <div>WidgetContent</div>
+    <div className="widget__footer">
+      { children }
+    </div>
   )
 }

@@ -1,7 +1,9 @@
-import React from 'react'
+export const Banner = (props) => {
+  const { url, alt } = props;
 
-export const Banner = () => {
   return (
-    <div>Banner</div>
+    <div className="block__banner">
+      <img src={url} alt={alt} className="banner__img" />
+    </div>
   )
 }

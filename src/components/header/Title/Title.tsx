@@ -7,9 +7,13 @@ export const Title = (props: ITitleProps) => {
 
   if (typeof title === 'string') {
     const secondName = active === true ? 'active' : '';
-    result.push(<a href={link} className={`widget__title__item ${secondName}`}><span>{title}</span></a>);
+    result.push(<a href={link} className={`widget__title__item ${secondName}`} key="title-0"><span>{title}</span></a>);
   } else {
     title.forEach((item, index) => {
+      if (active === true) {
+        result.push(<a href={item.link} className="widget__title__item active" key={index}><span>{item.text}</span></a>);
+        return;
+      }
       if (index === active) {
         result.push(<a href={item.link} className="widget__title__item active" key={index}><span>{item.text}</span></a>);
       } else {
